@@ -1,0 +1,98 @@
+:root{
+    --orange-color: #FF9000;
+    --errors-color: rgb(240, 52, 52);
+    --success-color: rgb(85, 236, 85);
+    --gray-100: #999591;
+    --gray-200: #312E38;
+    --gray-300: #232129;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: var(--gray-200);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 310px;
+    gap: 10px;
+}
+
+.input {
+    height: 56px;
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    border: none;
+    padding: 0 20px;
+    color: white;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--orange-color);
+    color: black;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.h1-login {
+    font-size: 34px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    color: var(--orange-color);
+}
+
+.errors {
+    color: var(--errors-color);
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.success{
+    color: var(--success-color);
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.p-login {
+    color: var(--gray-100);
+    font-size: 13px;
+    font-family: "Roboto Slab", sans-serif;
+    
+}
+
+.h3-login {
+    margin: 20px 0;
+    color: white;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+}
+
+a{
+    color: var(--orange-color);
+    text-decoration: none;
+}

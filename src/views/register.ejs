@@ -1,0 +1,21 @@
+<%- include('includes/head') %>
+
+<section class="container">
+    <h1 class="h1-login">Rocket Notes</h1>
+    <p class="p-login">Aplicação para salvar e gerenciar seus links úteis.</p>
+    <h3 class="h3-login">Crie sua conta</h3>
+
+    <%- include('includes/messages') %>
+
+    <form action="/register/register" method="post">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <input type="text" name="nome" placeholder="Nome" class="input-form input">
+        <input type="email" name="email" placeholder="E-mail" class="input-form input">
+        <input type="password" name="password" placeholder="Senha" class="input-form input">
+        <button class="btn">Cadastrar</button>
+    </form>
+
+    <a href="/login">Voltar para o login</a>
+</section>
+
+<%- include('includes/footer') %>
